@@ -1,0 +1,57 @@
+body{
+  padding: 0px;
+  margin: 0px;
+}
+.wrapper{
+  background-color: teal;
+  height: 100vh;
+}
+
+.left_row{
+  
+  height: 100vh;
+  width: 30%;
+  color: white;
+  padding-top: 20%;
+  padding-left: 5%;
+}
+.right_row{
+  height: 100vh;
+  width: 70%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-top: 5%;
+  padding-left: 10px; 
+  background-color: #403f4c
+}
+
+.searchField input[type=text]{
+ width: 35%;
+ border: none;
+ border-bottom: 1px solid white;
+ margin-right: 10px; 
+ padding: 5px;
+ background-color: transparent;
+}
+.searchField ::placeholder{
+  color: white;
+}
+.searchField button{
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  padding: 5px;
+  font-weight:500;
+}
+.getWeather{
+margin-top: 5%;
+color: white;
+width: 90%;
+}
+.weather p{
+  font-size: 20px;
+}
+.weather span{
+  padding-left: 30px;
+}
