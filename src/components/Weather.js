@@ -1,14 +1,37 @@
-import  React, { Component } from 'react'
+import React, { Component } from 'react'
 
- class Weather extends Component {
+class Weather extends Component {
   render() {
     return (
       <div className="weather">
-        <p>Coutry : <span>{this.props.country}</span></p>
-        <p>City : <span>{this.props.city}</span></p> 
-        <p>Temerature : <span>{this.props.temperature}</span></p> 
-        <p>Humidity : <span>{this.props.humidity}</span></p>   
-        <p>Description : <span>{this.props.description}</span></p> 
+
+<div className="result-field">
+              <div className="single-field">
+                    <div className="row"> 
+                    <p className="title-bar">Country </p><span>:</span>
+                    <p className="result-bar">{this.props.country}</p>
+                    </div>
+              </div>
+              <div className="single-field">
+                    <div className="row"> 
+                    <p className="title-bar">Temperature </p><span>:</span>
+                    <p className="result-bar">{this.props.temperature}</p>
+                    </div>
+              </div>
+              <div className="single-field">
+                    <div className="row"> 
+                    <p className="title-bar">Humidity </p><span>:</span>
+                    <p className="result-bar">{this.props.humidity}</p>
+                    </div>
+              </div>
+              <div className="single-field">
+                    <div className="row"> 
+                    <p className="title-bar">Description </p><span>:</span>
+                    <p className="result-bar">{this.props.description}</p>
+                    </div>
+              </div>
+          </div>
+
       </div>
     )
   }

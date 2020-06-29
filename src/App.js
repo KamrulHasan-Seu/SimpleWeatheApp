@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import axios from 'axios'
 import Search from './components/Search'
 import Title from './components/Title'
@@ -7,12 +7,12 @@ import Weather from './components/Weather'
 class App extends Component {
 
   state = {
-    temperature: undefined,
-    city: undefined,
-    country: undefined,
-    humidity: undefined,
-    description: undefined,
-    error: undefined
+    temperature: '',
+    city: '',
+    country: '',
+    humidity: '',
+    description: '',
+    error: ''
   }
 
   getWeather = (e) => {
@@ -40,23 +40,25 @@ class App extends Component {
     return (
 
       <div className="app wrapper">
-          <div className=" left_row">
-            <Title/>
-            </div>
-              <div className=" right_row">
-                <div className="searchDiv"><Search searchWeather={this.getWeather}/></div>
-                <div className="getWeather">
-                <Weather
-                  temperature={this.state.temperature}
-                  city
-                  ={this.state.city}
-                  country
-                  ={this.state.country}
-                  humidity={this.state.humidity}
-                  description={this.state.description}
-                  error={this.state.error}/>
-                </div>
-          
+        <div className=" left_row">
+          <Title />
+        </div>
+        <div className=" right_row">
+         <div className="full-right-row">
+         <div className="searchDiv"><Search searchWeather={this.getWeather} /></div>
+          <div className="getWeather">
+            <Weather
+              temperature={this.state.temperature}
+              city
+              ={this.state.city}
+              country
+              ={this.state.country}
+              humidity={this.state.humidity}
+              description={this.state.description}
+              error={this.state.error} />
+          </div>
+         </div>
+
         </div>
       </div>
     )
